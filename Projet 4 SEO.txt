@@ -1,0 +1,50 @@
+				            HTML
+page index
+
+***Ce document semble être écrit en français mais la html balise de début a lang="Default".
+ Envisagez d'utiliser lang="fr"(ou une variante) à la place.
+De la ligne 1 , colonne 16 ; à la ligne 2 , colonne 21..... C OK.
+
+page2: ERREUR
+
+*** Mauvaise valeur Default pour l'attribut langsur l'élément html:
+ La sous default- étiquette de langue n'est pas une partie de langue IANA valide d'une étiquette de langue.
+
+				OK
+
+
+*** Attribut success-msg non autorisé sur l'élément form à ce stade.
+De la ligne 83 , colonne 5 ; à la ligne 83 , colonne 170
+
+				OK
+Solution 
+
+<form action="/action_page.php" novalidate>
+
+au lieu de :
+<form id="form_1" novalidate success-msg="Your message has been sent.
+" fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+
+PAGE INDEX ET PAGE 2 html validator ok.
+
+
+VALIDATOR CSS: 8 ERREURS 
+
+851 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException:
+ La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
+regardez la section "Deprecated Media Features" dans la version actuelle de la spécification Media Queries.
+
+857 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException: 
+La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
+regardez la section "Deprecated Media Features" dans la version actuelle de la spécification Media Queries.
+
+877 / Propriété erronée : 
+padding-right constant(safe-area-inset-right) 
+n'est pas une valeur de padding-right : constant(safe-area-inset-right)
+
+887 / Propriété erronée : padding-left constant(safe-area-inset-left) 
+n'est pas une valeur de padding-left : constant(safe-area-inset-left)
+
+
+888 / Propriété erronée : padding-left constant(safe-area-inset-left)
+ n'est pas une valeur de padding-left : constant(safe-area-inset-left)
