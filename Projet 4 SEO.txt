@@ -28,7 +28,7 @@ au lieu de :
 PAGE INDEX ET PAGE 2 html validator ok.
 
 
-VALIDATOR CSS: 8 ERREURS 
+                                     VALIDATOR CSS: 8 ERREURS 
 
 851 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException:
  La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
@@ -37,6 +37,10 @@ regardez la section "Deprecated Media Features" dans la version actuelle de la s
 857 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException: 
 La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
 regardez la section "Deprecated Media Features" dans la version actuelle de la spécification Media Queries.
+
+SOLUTION / @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+
+
 
 877 / Propriété erronée : 
 padding-right constant(safe-area-inset-right) 

@@ -3,14 +3,20 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    text-decoration: none;
 }
 
 a:hover {
@@ -28,6 +34,7 @@ a:hover {
 }
 
 .bloc {
+    margin-bottom: 45px;
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
@@ -50,6 +57,12 @@ a:hover {
 
 .bloc-md {
     padding: 50px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .bloc-sm {
@@ -80,6 +93,8 @@ a:hover {
     background: top no-repeat;
 }
 
+
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -104,7 +119,7 @@ a:hover {
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .7);
 }
 
 .d-bloc .icon-round,
@@ -316,10 +331,10 @@ a:hover {
 }
 
 .navbar .nav {
+    display: flex;
+    flex-direction: column;
     padding-top: 2px;
-    margin-right: -16px;
-    float: right;
-    z-index: 1;
+    margin-right: 150px;
 }
 
 .nav > li {
@@ -506,8 +521,23 @@ button {
 }
 
 .form-control {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    
+}
+#message{
+    height: auto;
 }
 
 .scrollToTop {
@@ -650,16 +680,22 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
+    font-weight: 600;
     color: #575757!important;
 }
 
-.container {
-    max-width: 1000px;
-}
 
+.text-center {
+    text-align: center;
+}
 .hero-bloc-text {
     font-size: 38px;
+}
+blockquote {
+    font-size: 20px;
+    color: #575757;
+    font-style: italic;
+    margin: 30px auto 3px auto;
 }
 
 .hero-bloc-text-sub {
@@ -677,12 +713,14 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    color: #FFF!important;
 }
 
 .h1 {
@@ -701,7 +739,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -771,21 +809,26 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #4E342E;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FDD835!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    width: 200px;
+    margin-top: 22px;
+    background: #4E342E!important;
+    color: #FDD839!important;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #4E342E!important;
+    color: #FDD839!important;
+    opacity: 0.5;
 }
 
 .ltc-white {
@@ -824,6 +867,13 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -873,8 +923,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +934,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -905,15 +955,15 @@ h4 {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
-    }
+
     .navbar.row {
+        display: flex;
         margin-left: 0;
         margin-right: 0;
     }
@@ -924,12 +974,16 @@ h4 {
         -ms-transform: none;
     }
     .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
         width: 100%;
+    }
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .d-bloc .panel, .l-bloc {
+        color: rgba(0, 0, 0, .5);
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -1026,6 +1080,18 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    #bloc-4-portfolio img {
+        margin: auto;
+    }
+    .bloc-sm, .bloc-md {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        width: 80px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1033,10 +1099,12 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
+    .text-center{
+        font-size: 13px;
+    }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+@media (max-width: 545px) {
+    blockquote {
+        font-size: 18px;
     }
 }
