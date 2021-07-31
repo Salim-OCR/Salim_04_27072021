@@ -332,9 +332,10 @@ a:hover {
 
 .navbar .nav {
     display: flex;
-    flex-direction: column;
+    max-width: 80%;
+    float: inherit;
+    justify-content: space-between;
     padding-top: 2px;
-    margin-right: 150px;
 }
 
 .nav > li {
@@ -366,9 +367,6 @@ a:hover {
     width: 26px;
 }
 
-.nav-invert .navbar .nav {
-    float: left;
-}
 
 .nav-invert .navbar-header,
 .nav-invert .navbar-brand {
@@ -378,18 +376,12 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
+
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
     }
-    .nav-invert .site-navigation {
+    .nav-invert  {
         left: 0;
         right: 0;
     }
@@ -405,7 +397,7 @@ a:hover {
         float: none;
         display: inline-block;
     }
-    .nav-center .site-navigation {
+    .nav-center  {
         position: relative;
         width: 100%;
         right: 0;
@@ -963,15 +955,8 @@ h4 {
     }
 
     .navbar.row {
-        display: flex;
         margin-left: 0;
         margin-right: 0;
-    }
-    .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
     }
     .nav > li {
         width: 100%;
@@ -1009,24 +994,13 @@ h4 {
         left: -1px;
         right: -1px;
     }
-    .navbar-collapse {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
+ 
     .navbar-brand img {
         max-height: 40px;
         width: auto;
     }
-    .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
-    }
+
+
     .bloc {
         padding-left: 0;
         padding-right: 0;
@@ -1107,4 +1081,6 @@ h4 {
     blockquote {
         font-size: 18px;
     }
+}
+
 }

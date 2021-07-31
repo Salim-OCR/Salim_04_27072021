@@ -11,7 +11,7 @@ page2: ERREUR
  La sous default- étiquette de langue n'est pas une partie de langue IANA valide d'une étiquette de langue.
 
 				OK
-
+PAGE 2
 
 *** Attribut success-msg non autorisé sur l'élément form à ce stade.
 De la ligne 83 , colonne 5 ; à la ligne 83 , colonne 170
@@ -22,13 +22,14 @@ Solution
 <form action="/action_page.php" novalidate>
 
 au lieu de :
+
 <form id="form_1" novalidate success-msg="Your message has been sent.
 " fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 
 PAGE INDEX ET PAGE 2 html validator ok.
 
 
-                                     VALIDATOR CSS: 8 ERREURS 
+VALIDATOR CSS: 8 ERREURS 
 
 851 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException:
  La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
@@ -37,10 +38,6 @@ regardez la section "Deprecated Media Features" dans la version actuelle de la s
 857 / Erreur inconnue org.w3c.css.parser.analyzer.ParseException: 
 La propriétés de media “min-device-width” est déconseillée. Pour plus d'information, 
 regardez la section "Deprecated Media Features" dans la version actuelle de la spécification Media Queries.
-
-SOLUTION / @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
-
-
 
 877 / Propriété erronée : 
 padding-right constant(safe-area-inset-right) 
@@ -52,3 +49,138 @@ n'est pas une valeur de padding-left : constant(safe-area-inset-left)
 
 888 / Propriété erronée : padding-left constant(safe-area-inset-left)
  n'est pas une valeur de padding-left : constant(safe-area-inset-left)
+
+Résolut le padding je l'ai mis à 0px.
+
+
+
+*******************************************************************************************************************
+
+
+
+
+
+						SEO
+1-**Analyse de l’état actuel de SEO du site fourni.
+
+ indiques les parties du site qui ne sont pas optimisées pour le SEO
+cocher ces 10 recommandations choisies dans la colonne “Action recommandée”.
+Il faudra bien garder en tête que le but est que notre site soit mieux classé lorsqu’on tape
+“Entreprise webdesign Lyon” dans les moteurs de recherche.
+
+Martin voudrait qu’il y en ait au moins une sur la vitesse et la taille du site et une sur l’accessibilité
+
+
+
+2-**Amélioration du SEO du site
+
+Il faudra ensuite optimiser notre site en appliquant tes 10 recommandations à son contenu et à son code source. 
+Tu devras pour cela fournir le code source complet de la version améliorée du site. 
+Le site doit passer le W3C pour HTML et CSS.
+
+
+3-**Comparaison des résultats
+
+Dans tes différentes recommandations, j’aimerais que tu prennes des mesures pour accélérer la vitesse de chargement,
+ et que tu me démontres que cela fonctionne, grâce à des captures d’écran comparatives entre la version du site 
+actuelle et celle que tu auras optimisée, fourni dans un rapport d’optimisation
+
+
+
+
+*******************************************************************************************************************
+
+	1* Mettre une meta description pour chaque page html
+
+En informatique, la meta description d'une page web est une balise meta qui sert à l'indexation de cette page 
+par les moteurs de recherche et les annuaires. 
+Elle doit contenir une description concise du contenu de la page en une ou deux phrases.
+
+
+		***<meta name="description" content="La description de la page." />***
+
+<meta name="description" content="L'entreprise de webdesign, la chouette agence située à Lyon aide 
+les entreprises à devenir attractives et visibles sur Internet.">
+
+**************************************************************************************************
+
+2: effacer les meta keywords
+		***meta name= "keywords"
+La balise meta keywords ne possède plus aucun intérêt pour le référencement. 
+Elle ne fait plus partie des critères de référencement “in page” depuis plusieurs années déjà.
+
+L.5 delete
+L.46
+L.48
+
+page 2 renommé effacé les keywords unutiles renommé mon méta et la balise title
+
+*************************************************************************************************************
+ 
+3: mettre un h2
+
+<h2>
+	La chouette agence est une agence de Webdesign qui aide<br>
+	les entreprises à devenir attractives et visibles sur internet.
+</h2>
+ligne 94
+
+<div class="col-sm-12 text-center">
+	<!--rm img, rédaction h2-->
+	<h2>
+		Nous travaillons avec beaucoup de clients,<br>
+		voici nos réalisations.
+	</h2>
+</div>
+ligne 178;
+
+
+*************************************************************************************************************
+4: les images alt MODIFIER
+L.93 renplacer par une h2
+lignes 190
+
+BLOC 6, 
+ METTRE UNE IMAGE DE FONT DANS LA PAGE 2 LIGNE 61 MODIF. 
+
+
+*************************************************************************************************************
+5:
+L.61 : changement : page2 devient contact
+
+
+*************************************************************************************************************
+6:contrast: changement des taille de police et de couleurs orange deviens jaune; le font est plutot marron
+balise p au lieu de 10px de font-size j'ai mis 18px et j'ai rajouté un font-weight de 400. 
+
+*************************************************************************************************************
+7: balise sémentique
+
+
+*************************************************************************************************************
+8:
+
+
+*************************************************************************************************************
+9:
+
+
+*************************************************************************************************************
+10:
+
+
+
+*************************************************************************************************************
+11:
+
+
+*************************************************************************************************************
+12:
+
+
+
+
+
+
+
+
