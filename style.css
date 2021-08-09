@@ -10,12 +10,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.img_font{
+  background-image: url(img/image-de-presentation.jpg);
+}
 .chouette1{
   /* filter: grayscale(12%); */
-  width: 500px;
   font-family: 'Viaoda Libre', cursive;
-  
+  display: flex;
 }
 a,
 button {
@@ -364,7 +365,7 @@ a:hover {
 .navbar-toggle {
   margin: 10px 10px 0 0;
   border: 0px;
-  top: -65px;
+  top: 0px;
 }
 
 .navbar-toggle:hover {
@@ -687,7 +688,8 @@ label,
 .btn,
 a {
   font-family: "helvetica";
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.1;
   color: #575757 !important;
 }
 
@@ -827,11 +829,11 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  width: 200px;
+  width: 275px;
   margin-top: 22px;
   background: #4E342E !important;
   color: #FDD839 !important;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
@@ -1076,6 +1078,10 @@ h4 {
   }
   #bloc-4-portfolio img {
     margin: auto;
+    margin: auto;
+    display: block;
+    max-width: 55%;
+    height: auto;
   }
   .bloc-sm, .bloc-md {
     padding-left: 0;
