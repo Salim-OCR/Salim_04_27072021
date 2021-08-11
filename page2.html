@@ -64,10 +64,10 @@
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
-								<a href="index.html#bloc-2-services" title="Nos métiers">Nos métiers</a>
+								<a aria-label="lien vers nos métiers dans la page d'acceuil" href="index.html#bloc-2-services" title="les métiers">Nos métiers</a>
 							</li>
 							<li>
-								<a href="index.html#bloc-4-portfolio" title="Nos réalisations">Nos réalisations</a>
+								<a aria-label="lien vers nos réalisations dans la page d'acceuil" href="index.html#bloc-4-portfolio" title="les réalisations">Nos réalisations</a>
 							</li>
 							<li>
 								<a href="index.html" title="La page de contact">Acceuil</a>
@@ -112,20 +112,19 @@
 							<!--up formulaire for action -->
 							<form method="post" action="includes/form_1.php" id="form_1" novalidate="">
 								<div class="form-group">
-									<label for="name">Nom</label>
-									<input id="name" name="name" class="form-control" type="text">
+									<label for="name">Nom et Prénom</label>
+									<input id="name" name="name" class="modif form-control" type="text" placeholder="DUBOIS Marine" required>
 									<div class="help-block"></div>
 								</div>
 								<div class="form-group">
 									<label for="email">
-										Adresse email
+										Votre adresse email
 									</label>
-									<input id="email" name="email" class="form-control" type="email" required=""
-										autofocus="" aria-invalid="false">
+									<input id="email" name="email" class="modif form-control" type="email" autofocus="" aria-invalid="false" placeholder="lachouette.hibou@outlook.fr" required>
 									<div class="help-block"></div>
 								</div>
 								<div class="form-group">
-									<label for="info"> Comment nous avez-vous connus ?</label>
+									<label for="info" required> Comment nous avez-vous connus ?</label>
 									<select name="info" id="info">
 										<option value="connaissance">Part une connaissance.</option>
 										<option value="web" selected="">En navigant sur Internet.</option>
@@ -134,11 +133,11 @@
 
 								</div>
 								<div class="form-group">
-									<label for="message">
+									<label for="message" required>
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label>
 									<textarea id="message" name="message" class="form-control" minlength="10" rows="4"
-										cols="50" required="">										</textarea>
+										cols="50" required>													</textarea>
 									<div class="help-block"></div>
 								</div>
 								<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
